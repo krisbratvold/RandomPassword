@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Random Password (passcode #@ViewBag.Count)</h1>
+    <h1 class="border border-dark border-3 p-3">@ViewBag.Password</h1>
+    <form action="/">
+    <button>Create</button>
+    </form>
+    <button><a href="clear">Clear</a></button>
+</div>
